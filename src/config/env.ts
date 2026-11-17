@@ -10,9 +10,7 @@ const required = (key: string): string => {
 export const env = {
   nodeEnv: process.env.NODE_ENV ?? 'development',
   port: Number(process.env.PORT ?? 3000),
-  smtpHost: required('SMTP_HOST'),
-  smtpPort: Number(process.env.SMTP_PORT ?? 465),
-  smtpUser: required('SMTP_USER'),
-  smtpPass: required('SMTP_PASS'),
-  mailFrom: required('MAIL_FROM')
+  brevoApiKey: required('BREVO_API_KEY'),
+  mailFromEmail: required('MAIL_FROM_EMAIL'),
+  mailFromName: process.env.MAIL_FROM_NAME ?? 'CurePlus'
 };

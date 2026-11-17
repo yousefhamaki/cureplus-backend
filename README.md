@@ -4,7 +4,7 @@ Express + TypeScript API that emails a verification code.
 
 ## Run
 1. `npm install`
-2. Copy `.env.example` to `.env` and fill in the SMTP values
+2. Copy `.env.example` to `.env` and set `BREVO_API_KEY` and `MAIL_FROM_EMAIL`
 3. `npm run dev`
 
 Swagger docs: http://localhost:3000/docs
